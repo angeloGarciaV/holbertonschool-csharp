@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 dotnet new console
-dotnet build --output 2-new_project
-dotnet run --project 2-new_project
+dotnet build --output ./2-new_project
+dotnet run --project ./2-new_project
