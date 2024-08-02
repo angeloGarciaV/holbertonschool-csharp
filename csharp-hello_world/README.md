@@ -10,3 +10,9 @@
 
   #### 3-writeline
   - C# project that writes to the console
+
+  #### 4-print_integer
+  - C# project that prints an integer to the console
+
+  #### 5-print_float
+  - C# project that writes to the console
