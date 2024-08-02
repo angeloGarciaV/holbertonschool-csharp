@@ -22,3 +22,6 @@
 
   #### 7-Concat
   - C# project that prints "Welcome to Holberton School!"
+
+  #### 6-print_variables
+  - C# project that pritns variables
