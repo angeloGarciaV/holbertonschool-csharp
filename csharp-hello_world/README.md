@@ -19,3 +19,6 @@
 
   #### 6-print_string
   - C# project that prints a string 3 time then its first 9 characters
+
+  #### 7-Concat
+  - C# project that prints "Welcome to Holberton School!"
