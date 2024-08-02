@@ -31,3 +31,6 @@
 
   #### 10-copy_cut_paste
   - C# project that cuts strings using substring method.
+
+  #### 11-concat_edges
+  - Second C# project that cuts strings using substring method.
