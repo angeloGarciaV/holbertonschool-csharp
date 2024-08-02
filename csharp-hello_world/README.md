@@ -28,3 +28,6 @@
 
   #### 9-print_specifiers
   - C# project that converts variables to other formats.
+
+  #### 10-copy_cut_paste
+  - C# project that cuts strings using substring method.
