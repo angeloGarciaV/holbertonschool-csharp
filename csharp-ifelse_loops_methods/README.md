@@ -6,4 +6,4 @@
 
 #### 0-positive_or_negative
 
-- Pritns whether a number from -10 to 10 is positive or negative.
+- program to determine if a number is positive or negative
