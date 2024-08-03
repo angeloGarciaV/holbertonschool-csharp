@@ -6,11 +6,10 @@ class Program
   {
     for(int i=0; i < 100; i++)
     {
-      Console.Write(i.ToString("D2"));
       if(i < 99){
-        Console.Write(", ");
+        Console.Write("{0}, ", i.ToString("D2"));
       } else{
-        Console.WriteLine("");
+        Console.WriteLine(i.ToString("D2"));
       }
     }
   }
