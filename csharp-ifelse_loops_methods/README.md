@@ -11,3 +11,7 @@
 #### 1-last_digit
   
 - program to determine the last digit of a random number
+
+#### 2-print_alphabet
+
+- program to print the alphabet
