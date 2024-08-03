@@ -7,3 +7,7 @@
 #### 0-positive_or_negative
 
 - program to determine if a number is positive or negative
+
+#### 1-last_digit
+  
+- program to determine the last digit of a random number
