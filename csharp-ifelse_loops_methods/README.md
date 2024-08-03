@@ -15,3 +15,11 @@
 #### 2-print_alphabet
 
 - program to print the alphabet
+
+#### 3-print_alphabt
+
+- program to print the alphabet without 'e' or 'q'
+
+#### 4-print_hexa
+
+- prints all numbers from 0 to 98 in decimal and in hexadecimal
