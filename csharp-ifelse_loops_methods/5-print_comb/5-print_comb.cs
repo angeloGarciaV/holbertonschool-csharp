@@ -9,7 +9,7 @@ class Program
       if(i < 99){
         Console.Write("{0}, ", i.ToString("D2"));
       } else{
-        Console.WriteLine(i.ToString("D2"));
+        Console.Write(i.ToString("D2") + "\n");
       }
     }
   }
