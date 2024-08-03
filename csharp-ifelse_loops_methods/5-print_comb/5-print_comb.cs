@@ -10,7 +10,7 @@ class Program
       if(i < 99){
         Console.Write(", ");
       } else{
-        Console.WireLine("");
+        Console.WriteLine("");
       }
     }
   }
