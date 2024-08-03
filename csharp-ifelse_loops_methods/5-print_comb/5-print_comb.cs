@@ -9,6 +9,8 @@ class Program
       Console.Write(i.ToString("D2"));
       if(i < 99){
         Console.Write(", ");
+      } else{
+        Console.WireLine("");
       }
     }
   }
