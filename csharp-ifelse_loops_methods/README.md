@@ -31,3 +31,7 @@
 #### 6-print_comb2
 
 - prints unique combination of numbers
+
+#### 7-islower
+
+- method to check if a character is lowercase without using IsLower method
