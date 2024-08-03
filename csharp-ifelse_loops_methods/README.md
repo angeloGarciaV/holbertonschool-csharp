@@ -35,3 +35,7 @@
 #### 7-islower
 
 - method to check if a character is lowercase without using IsLower method
+
+#### 8-print_last_digit
+
+- method that prints the last digit of a number
