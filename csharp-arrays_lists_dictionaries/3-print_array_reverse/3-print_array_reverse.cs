@@ -6,7 +6,6 @@ class Array
   {
     if(array == null|| array.Length == 0)
     {
-      Console.WriteLine();
       return;
     }
     int temp;
