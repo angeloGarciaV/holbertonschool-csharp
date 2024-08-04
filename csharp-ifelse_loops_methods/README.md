@@ -43,3 +43,7 @@
 #### 9-add
 
 - method that adds two numbers
+
+#### 10-print_line
+
+- method that draws a straight line in the terminal
