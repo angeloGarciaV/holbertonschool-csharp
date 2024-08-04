@@ -31,3 +31,7 @@
 #### 6-divisible_by_2
 
 - method that finds all multiples of 2 in a list
+
+#### 7-delete-at
+
+- method that deletes the item at a specific position in a list
