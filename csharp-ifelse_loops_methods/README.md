@@ -39,3 +39,7 @@
 #### 8-print_last_digit
 
 - method that prints the last digit of a number
+
+#### 9-add
+
+- method that adds two numbers
