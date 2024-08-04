@@ -55,3 +55,7 @@
 #### 12-print_sorted_dictionary
 
 - method that prints a dictionary by ordered keys
+
+#### 13-best_score
+
+- method that returns the key with the biggest integer value in a given dictionary
