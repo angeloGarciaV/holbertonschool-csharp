@@ -43,3 +43,7 @@
 #### 9-add_key_value
 
 - method that adds a key and value to a dictionary
+
+#### 10-delete_key_value
+
+- method that deletes a key in a dictionary
