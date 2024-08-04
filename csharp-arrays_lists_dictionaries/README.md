@@ -15,3 +15,7 @@
 #### 2-replace_element
 
 - method to replace an element at a specified index in an integer array
+
+#### 3-print_array_reverse
+
+- method that prints all integers of an array, in reverse order
