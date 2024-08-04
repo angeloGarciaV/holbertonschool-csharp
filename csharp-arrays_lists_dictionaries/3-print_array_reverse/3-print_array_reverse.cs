@@ -21,7 +21,7 @@ class Array
     for(int j = 0; j<length; j++)
     {
       Console.Write(array[j]);
-      if(j < length){
+      if(j < length - 1){
         Console.Write(" ");
       }
     }
