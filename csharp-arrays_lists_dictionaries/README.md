@@ -39,3 +39,7 @@
 #### 8-number_keys
 
 - method that returns the number of keys in a dictionary
+
+#### 9-add_key_value
+
+- method that adds a key and value to a dictionary
