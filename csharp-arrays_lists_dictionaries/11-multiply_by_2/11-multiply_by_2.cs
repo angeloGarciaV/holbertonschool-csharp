@@ -10,10 +10,8 @@ class Dictionary
 
     foreach (KeyValuePair<string, int> kvp in myDict)
     {
-      var k = kvp.Key;
-      var v = kvp.Value;
-      myDict[k] = v*2;
+      newDict.Add(kvp.Key, kvp.Value * 2);
     }
-    return myDict;
+    return newDict;
   }
 }
