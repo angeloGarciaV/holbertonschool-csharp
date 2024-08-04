@@ -47,3 +47,7 @@
 #### 10-delete_key_value
 
 - method that deletes a key in a dictionary
+
+#### 11-multiply_by_2
+
+- method that returns a new dictionary with all values multiplied by 2
