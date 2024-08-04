@@ -23,3 +23,7 @@
 #### 4-print_list
 
 - method that creates and prints a list of integers of a given size
+
+#### 5-max_integer
+
+- method that finds the biggest integer of a list
