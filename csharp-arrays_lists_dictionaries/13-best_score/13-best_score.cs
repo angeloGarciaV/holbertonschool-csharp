@@ -13,7 +13,7 @@ class Dictionary
     string person = "";
     foreach(KeyValuePair<string, int> kvp in myList)
     {
-      if(kvp.Value > highest)
+      if(kvp.Value >= highest)
       {
         highest = kvp.Value;
         person = kvp.Key;
