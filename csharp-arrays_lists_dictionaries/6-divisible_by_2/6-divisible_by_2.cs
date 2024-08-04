@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 class List
 {
@@ -9,9 +10,9 @@ class List
     if(myList.Count == 0){
       return evens;
     }
-    for(int i = 0; i < myList.Count; i++)
+    foreach(int num in myList)
     {
-      if(myList[i] % 2 == 0)
+      if(num % 2 == 0)
       {
         evens.Add(true); 
       } else
