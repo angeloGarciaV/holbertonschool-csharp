@@ -11,3 +11,7 @@
 #### 1-element_at
 
 - method to access array elements by index
+
+#### 2-replace_element
+
+- method to replace an element at a specified index in an integer array
