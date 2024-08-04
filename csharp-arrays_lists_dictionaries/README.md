@@ -19,3 +19,7 @@
 #### 3-print_array_reverse
 
 - method that prints all integers of an array, in reverse order
+
+#### 4-print_list
+
+- method that creates and prints a list of integers of a given size
