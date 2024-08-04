@@ -51,3 +51,7 @@
 #### 11-print_diagonal
 
 - method that draws a diagonal line in the terminal
+
+#### 12-fizzbuzz
+
+- FizzBuzz method to print numbers with specific conditions
