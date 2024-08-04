@@ -35,3 +35,7 @@
 #### 7-delete-at
 
 - method that deletes the item at a specific position in a list
+
+#### 8-number_keys
+
+- method that returns the number of keys in a dictionary
