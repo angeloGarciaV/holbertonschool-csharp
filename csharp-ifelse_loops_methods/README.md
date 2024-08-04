@@ -47,3 +47,7 @@
 #### 10-print_line
 
 - method that draws a straight line in the terminal
+
+#### 11-print_diagonal
+
+- method that draws a diagonal line in the terminal
