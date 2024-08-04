@@ -27,3 +27,7 @@
 #### 5-max_integer
 
 - method that finds the biggest integer of a list
+
+#### 6-divisible_by_2
+
+- method that finds all multiples of 2 in a list
