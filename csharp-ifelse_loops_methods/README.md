@@ -1,4 +1,4 @@
-# C# - ifElse and Loops
+# C# - Else If and Loops
 
 ## Project 2 -
 
