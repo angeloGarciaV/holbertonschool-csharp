@@ -51,3 +51,7 @@
 #### 11-multiply_by_2
 
 - method that returns a new dictionary with all values multiplied by 2
+
+#### 12-print_sorted_dictionary
+
+- method that prints a dictionary by ordered keys
