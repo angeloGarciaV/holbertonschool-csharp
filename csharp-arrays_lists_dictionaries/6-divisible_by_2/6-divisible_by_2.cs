@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Globalization;
+using System.Collections.Generic;
 
 class List
 {
@@ -7,9 +7,6 @@ class List
   {
     List<bool> evens = new List<bool>();
 
-    if(myList.Count == 0){
-      return evens;
-    }
     foreach(int num in myList)
     {
       if(num % 2 == 0)
