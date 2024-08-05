@@ -63,3 +63,7 @@
 #### 14-best_score
 
 - program that creates and prints a 5 by 5 two-dimensional array
+
+#### 15-square_matrix
+
+- method that computes the square value of all integers of a matrix
