@@ -1,4 +1,4 @@
-# Holberton School C #
+# Holberton School C
 
 ## 1- C# Hello, World
 
@@ -29,4 +29,14 @@
 - How to create and use dictionaries
 - What is the difference between dictionary and hashtables in C#
 - When would you use a dictionary vs a hashtable
+- How to use foreach
+
+## 4- C# - Data Structures: HashSet, Stack, Queue, LinkedList
+
+- How to create and use arrays
+- What are Collections in C#?
+- How to create and use hashsets
+- How to create and use stacks
+- How to create and use queues
+- How to create and use linked lists
 - How to use foreach

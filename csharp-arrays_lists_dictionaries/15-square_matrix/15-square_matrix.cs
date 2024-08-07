@@ -18,12 +18,3 @@ class Matrix
     return newMatrix;
   }
 }
-
-
-
-
-// Write a method that computes the square value of all integers of a matrix.
-
-// Class Name: Matrix
-// Prototype: public static int[,] Square(int[,] myMatrix)
-// Returns a new matrix containing the square value of all integers of the original matrix
