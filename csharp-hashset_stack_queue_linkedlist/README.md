@@ -43,3 +43,7 @@
 #### 9-linkedlist_pop
 
 - method that deletes the head node of a LinkedList and returns that node’s data
+
+#### 10-linkedlist_get_node
+
+- method that returns the value of the nth node of a LinkedList
