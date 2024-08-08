@@ -15,3 +15,7 @@
 #### 2-different_elements
 
 - method that returns a sorted list of all elements present in one or the other list but not both
+
+#### 3-stack_push_pop
+
+- method that manipulates a stack and retrieves information
