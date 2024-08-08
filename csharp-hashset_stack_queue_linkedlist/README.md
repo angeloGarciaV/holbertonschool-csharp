@@ -39,3 +39,7 @@
 #### 8-linkedlist_find
 
 - method that finds a value in a LinkedList and returns its index position in the list
+
+#### 9-linkedlist_pop
+
+- method that deletes the head node of a LinkedList and returns that node’s data
