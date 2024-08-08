@@ -55,3 +55,7 @@
 #### 12-linkedlist_insert
 
 - method that inserts a new node in the correct position in an ordered LinkedList
+
+#### 13-linkedlist_delete
+
+- method that deletes the node at given position in a LinkedList
