@@ -31,3 +31,7 @@
 #### 6-linkedlist_length
 
 - method that returns the number of elements in a LinkedList
+
+#### 7-linkedlist_add
+
+- method that adds a node to the beginning of a LinkedList
