@@ -18,4 +18,8 @@
 
 #### 3-stack_push_pop
 
-- method that manipulates a stack and retrieves information
+- method that manipulates a stack and retrieves its information
+
+#### 4-queue_enqueue_dequeue
+
+- method that manipulates a queue and retrieves its information
