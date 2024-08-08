@@ -27,3 +27,7 @@
 #### 5-print_linkedlist
 
 - method that creates and prints a LinkedList of integers of a given size
+
+#### 6-linkedlist_length
+
+- method that returns the number of elements in a LinkedList
