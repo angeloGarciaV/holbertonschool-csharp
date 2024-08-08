@@ -47,3 +47,7 @@
 #### 10-linkedlist_get_node
 
 - method that returns the value of the nth node of a LinkedList
+
+#### 11-linkedlist_sum
+
+- method that returns the sum of all the data of a LinkedList
