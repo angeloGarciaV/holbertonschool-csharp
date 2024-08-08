@@ -5,15 +5,16 @@ class LList
 {
   public static int GetNode(LinkedList<int> myLList, int n)
   {
-    if(n > myLList.Count || n < 0)
+    LinkedListNode<int> currentNode = myLList.First;
+
+    for(int i = 0; i< myLList.Count; i++)
     {
-      return 0;
-    }
-LinkedListNode<int> currentNode = myLList.First;
-    for(int i = 0; i< n; i++)
-    {
+      if(n == i)
+      {
+        return currentNode.Value;
+      }
       currentNode = currentNode.Next;
     }
-    return currentNode.Value;
+    return 0;
   }
 }
