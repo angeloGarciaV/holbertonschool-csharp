@@ -35,3 +35,7 @@
 #### 7-linkedlist_add
 
 - method that adds a node to the beginning of a LinkedList
+
+#### 8-linkedlist_find
+
+- method that finds a value in a LinkedList and returns its index position in the list
