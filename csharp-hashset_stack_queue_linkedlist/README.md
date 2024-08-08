@@ -51,3 +51,7 @@
 #### 11-linkedlist_sum
 
 - method that returns the sum of all the data of a LinkedList
+
+#### 12-linkedlist_insert
+
+- method that inserts a new node in the correct position in an ordered LinkedList
