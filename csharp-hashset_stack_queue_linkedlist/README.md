@@ -11,3 +11,7 @@
 #### 1-common_elements
 
 - method that returns a sorted list of common elements in two lists
+
+#### 2-different_elements
+
+- method that returns a sorted list of all elements present in one or the other list but not both
