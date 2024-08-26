@@ -11,3 +11,7 @@
 #### 1-enemey
 
 - Adds Health parameter to Zombie
+
+#### 2-enemy
+
+- New constructor with value int
