@@ -19,3 +19,7 @@
 #### 3-enemy
 
 - New constructor with private helath field and getter method for health
+
+#### 4-enemy
+
+- Name property with getter and setter
