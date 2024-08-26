@@ -15,3 +15,7 @@
 #### 2-enemy
 
 - New constructor with value int
+
+#### 3-enemy
+
+- New constructor with private helath field and getter method for health
