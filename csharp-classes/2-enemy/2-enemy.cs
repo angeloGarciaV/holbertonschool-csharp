@@ -16,12 +16,12 @@ namespace Enemies
     /// <summary>Instnace of Zombie with value parameter.</summary>
     public Zombie(int value)
     {
-      if(value < 0)
+      if(value >= 0)
       {
-        throw ArgumentException("Health must be greater than or equal to 0");
+        health = value;
       }
       else{
-        health = value;
+        throw new ArgumentException("Health must be greater than or equal to 0");
       }
     }
   }
