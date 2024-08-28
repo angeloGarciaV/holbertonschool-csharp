@@ -1,6 +1,6 @@
 # Holberton School C\# [![My Skills](https://skillicons.dev/icons?i=cs)](https://learn.microsoft.com/en-us/dotnet/csharp/)
 
-## 1. Hello, World
+## 0. [Hello, World](./csharp-hello_world/)
 
 - What is the meaning behind the name C#?
 - Who is the lead architect of the development team of C#?
@@ -9,7 +9,7 @@
 - How to use VSCode and the integrated terminal to initialize, build, and run C# projects
 - How to print text and variables using Console.Write
 
-## 2. Else If and Loops
+## 1. [Else If and Loops](./csharp-ifelse_loops_methods/)
 
 - How to use if, else if, else statements
 - How to use while and for loops
@@ -19,7 +19,7 @@
 - How to call public methods from another class
 - What is passing by reference and passing by value
 
-## 3. Arrays, Lists, and Dictionaries
+## 2. [Arrays, Lists, and Dictionaries](./csharp-arrays_lists_dictionaries/)
 
 - How to create and use arrays
 - What are Collections in C#
@@ -31,7 +31,7 @@
 - When would you use a dictionary vs a hashtable
 - How to use foreach
 
-## 4. Data Structures: HashSet, Stack, Queue, LinkedList
+## 3. [Data Structures: HashSet, Stack, Queue, LinkedList](./csharp-hashset_stack_queue_linkedlist/)
 
 - How to create and use arrays
 - What are Collections in C#?
@@ -41,7 +41,7 @@
 - How to create and use linked lists
 - How to use foreach
 
-## 5. Exceptions
+## 4. [Exceptions](./csharp-exceptions/)
 
 - What are exceptions and when to use them
 - What is the purpose of catching exceptions
@@ -50,7 +50,7 @@
 - How to raise built-in exceptions
 - When to implement clean-up actions after exceptions
 
-## 6. Structs & Enumerations
+## 5. [Structs & Enumerations](./csharp-structs_enums/)
 
 - What is a struct
 - What is a constructor
@@ -59,7 +59,7 @@
 - What is an enumeration and when to use them
 - What does toString do and how to override it
 
-## 7. Classes and Namespaces
+## 6. [Classes and Namespaces](./csharp-classes/)
 
 - How to document C# code with XML comments
 - What is object-oriented programming?
@@ -84,3 +84,16 @@
 - What is the difference between a class and a struct
 - When to use a class and when to use a struct
 - What is garbage collection in C#
+
+## 7- [Test Driven Development](./csharp-tdd/)
+
+- What are solutions in VSCode
+- How are solutions different from projects in VSCode
+- What is a class library
+- What is a unit test
+- What are the benefits of unit testing
+- How to create and run tests using NUnit
+- What is the Arrange, Act, Assert methodology
+- How to effectively name your unit tests
+- How to utilize the TDD approach
+- How to consider edge cases

@@ -1,6 +1,6 @@
 # C# - Structs, Enumerations
 
-## Project 6 -
+## Project 5 -
 
 ### Tasks
 

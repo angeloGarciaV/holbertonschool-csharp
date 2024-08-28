@@ -1,6 +1,6 @@
 # C# - Hello, World
 
-## Project 1 -
+## Project 0 -
 
 ### Tasks
 

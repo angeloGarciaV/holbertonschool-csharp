@@ -1,6 +1,6 @@
 # C# - Arrays, Lists, and Dictionaries
 
-## Project 3 -
+## Project 2 -
 
 ### Tasks
 

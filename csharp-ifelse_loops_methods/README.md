@@ -1,6 +1,6 @@
 # C# - Else If and Loops
 
-## Project 2 -
+## Project 1 -
 
 ### Tasks
 

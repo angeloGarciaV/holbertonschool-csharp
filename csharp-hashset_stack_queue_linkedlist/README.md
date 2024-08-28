@@ -1,6 +1,6 @@
 # C# - Data Structures: HashSet, Stack, Queue, LinkedList
 
-## Project 4 -
+## Project 3 -
 
 ### Tasks
 
