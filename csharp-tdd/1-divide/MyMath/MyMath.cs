@@ -2,8 +2,17 @@
 
 namespace MyMath
 {
+  /// <summary>
+  /// Represents a matrix utility class.
+  /// </summary>
   public class Matrix
   {
+    /// <summary>
+    /// Divides all elements of a matrix.
+    /// </summary>
+    /// <param name="matrix">int[,]</param>
+    /// <param name="num">int</param>
+    /// <returns>Divided matrix</returns>
     public static int[,] Divide(int[,] matrix, int num)
     {
       try{

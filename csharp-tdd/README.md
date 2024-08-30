@@ -15,3 +15,7 @@
 #### 2-max_int
 
 - Tests for a method that returns the max integer in a list of integers.
+
+#### 3-palindrome
+
+- Tests for a method that determines if a string is a palindrome.
