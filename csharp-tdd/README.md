@@ -19,3 +19,7 @@
 #### 3-palindrome
 
 - Tests for a method that determines if a string is a palindrome.
+
+#### 4-Unique
+
+- Tests for a method that returns the index of the first unique character in a string.
