@@ -1,4 +1,7 @@
-﻿namespace Text
+﻿using System;
+using System.Collections.Generic;
+
+namespace Text
 {
   /// <summary>
   /// Represents a string utility class.
