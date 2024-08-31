@@ -23,3 +23,7 @@
 #### 4-Unique
 
 - Tests for a method that returns the index of the first unique character in a string.
+
+#### 5-CamelCase
+
+- Tests for a method that determines how many words are in a string. Each word begins with a capital letter except the first word.
