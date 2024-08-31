@@ -1,29 +1,58 @@
 using NUnit.Framework;
-using Text;
 
-namespace Text.Tests{
-    [TestFixture]
-    public class PalindromeTests
+namespace Text.Tests
+{
+    public class StrTests
     {
-        [Test]
-        public void willItTrue()
+        [TestCase("racecar")]
+        [TestCase("LEVEL")]
+        [TestCase("daD")]
+        [TestCase("RaCeCAr")]
+        public void IsPalindrome_WhenStringIsPalindrome_ReturnsTrue(string testString)
         {
-            bool result = Str.IsPalindrome("racecar");
-            Assert.That(result == true);
+            // Act
+            bool isPalindrome = Str.IsPalindrome(testString);
+
+            // Assert
+            Assert.That(isPalindrome == true);
         }
-        
-        [Test]
-        public void willItTrue_cap()
+
+        [TestCase("ra ce ca     r")]
+        [TestCase("L:EV EL...")]
+        [TestCase("da,,,,D")]
+        [TestCase("R aC   eC:::::,,Ar")]
+        public void IsPalindrome_WhenStringIsPalindromeWithSpaceAndOrPunctuation_ReturnsTrue(string testString)
         {
-            bool result = Str.IsPalindrome("Racecar");
-            Assert.That(result == true);
+            // Act
+            bool isPalindrome = Str.IsPalindrome(testString);
+
+            // Assert
+            Assert.That(isPalindrome == true);
         }
-        
+
         [Test]
-        public void willItFlase()
+        public void IsPalindrome_WhenStringIsEmpty_ReturnsTrue()
         {
-            bool result = Str.IsPalindrome("Hello");
-            Assert.That(result == false);
+            // Arrange - init empty string
+            var testString = string.Empty;
+
+            // Act
+            bool isPalindrome = Str.IsPalindrome(testString);
+
+            // Assert
+            Assert.That(isPalindrome == true);
+        }
+
+        [TestCase("Mother")]
+        [TestCase("brother")]
+        [TestCase("FATHER")]
+        public void IsPalindrome_WhenStringIsNotPalindrome_ReturnsFalse(string testString)
+        {
+            // Act
+            bool isPalindrome = Str.IsPalindrome(testString);
+
+            // Assert
+            Assert.That(isPalindrome == false);
         }
     }
 }
