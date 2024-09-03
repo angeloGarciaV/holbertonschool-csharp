@@ -97,3 +97,14 @@
 - How to effectively name your unit tests
 - How to utilize the TDD approach
 - How to consider edge cases
+
+## 8-[Class Inheritance](./csharp-inheritance/)
+
+- What is inheritance
+- How is polymorphism achieved with inheritance
+- What is a base class
+- What is a derived class
+- How to create a derived class
+- How to override a method or property inherited from the base class
+- What is the difference between the override and new modifiers
+- What are is, .GetType(), TypeOf(), .IsInstanceOfType(), and .IsSubclassOf() and when to use them
