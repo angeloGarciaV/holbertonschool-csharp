@@ -1,6 +1,4 @@
 ﻿using System;
-using System;
-using System.Diagnostics.CodeAnalysis;
 
 /// <summary>
 /// Represents a shape.
@@ -80,9 +78,9 @@ class Square : Rectangle
       if(value < 0)
         throw new ArgumentException("Size must be greater than or equal to 0");
 
-      this.size = value;
-      this.Width = value;
-      this.Height = value;
+      size = value;
+      Width = value;
+      Height = value;
     }
   }
 }
