@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Numerics;
 
+/// <summary>
+/// Represents a class of vector math
+/// </summary>
 class VectorMath
 {
   /// <summary>
