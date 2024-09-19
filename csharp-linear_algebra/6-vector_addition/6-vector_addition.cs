@@ -1,18 +1,13 @@
-﻿using System;
-using System.Numerics;
+﻿﻿using System;
 
-/// <summary>
-/// Represents a class of vector math
-/// </summary>
+/// <summary>Contains methods to perform vector operations.</summary>
 class VectorMath
 {
-  /// <summary>
-  /// Adds two vectors
-  /// </summary>
-  /// <param name="vector1"></param>
-  /// <param name="vector2"></param>
-  /// <returns>added array of doubles</returns>
-public static double[] Add(double[] vector1, double[] vector2)
+    /// <summary>Calculates the sum of two vectors.</summary>
+    /// <param name="vector1">First vector.</param>
+    /// <param name="vector2">Second vector.</param>
+    /// <returns>The sum of the vectors.</returns>
+    public static double[] Add(double[] vector1, double[] vector2)
     {
         if (vector1.Length == 2 && vector2.Length == 2 || vector1.Length == 3 && vector2.Length == 3)
         {
