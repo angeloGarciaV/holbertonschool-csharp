@@ -6,7 +6,7 @@ class MatrixMath
   {
     double cos = Math.Cos(angle);
     double sin = Math.Sin(angle);
-    double[,] rotation ={{cos,-sin}, {sin, cos}};
+    double[,] rotation ={{cos,sin}, {-sin, cos}};
     double[,] res = new double[2, 2];
     
     for(int i =0; i< 2; i++)
