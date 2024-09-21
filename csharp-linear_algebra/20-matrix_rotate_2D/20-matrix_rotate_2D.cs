@@ -4,23 +4,27 @@ class MatrixMath
 {
   public static double[,] Rotate2D(double[,] matrix, double angle)
   {
-    double cos = Math.Cos(angle);
-    double sin = Math.Sin(angle);
-    double[,] rotation ={{cos,-sin}, {sin, cos}};
-    double[,] res = new double[2, 2];
-    
-    for(int i =0; i< 2; i++)
+    int rows = matrix.GetLength(0);
+    int cols = matrix.GetLength(1);
+    double cosAngle = Math.Cos(angle);
+    double sinAngle = Math.Sin(angle);
+    double sum = 0;
+    double[,] rotation = new double[2,2]{{cosAngle, sinAngle}, {-sinAngle, cosAngle}};
+    double[,] res = new double[rows,cols];
+
+    for(int i =0; i< rows; i++)
       {
-        for(int j = 0; j < 2; j++)
+        for(int j = 0; j < rotation.GetLength(1); j++)
         {
-          for(int k = 0; k < 2; k++)
+          for(int k = 0; k < cols; k++)
           {
-            res[i,j] += matrix[i,k] * rotation[k,j];
-            res[i,j] = Math.Round(res[i,j], 2);
+            sum += matrix[i,k] * rotation[k,j];
+            
           }
+          res[i,j] = Math.Round(sum,2);
+          sum = 0;
         }
       }
-
     return res;
   }
 }
