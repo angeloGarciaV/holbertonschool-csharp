@@ -19,7 +19,7 @@ class MatrixMath
     double[,] result = new double[rows1, cols2]; 
     double sum = 0;
 
-    if (((rows1 == 2 && cols1 == 2) || (rows1 == 3 && cols1 == 3)) && (cols1 == rows2))
+    if (cols1 == rows2)
     {
       for(int i =0; i< rows1; i++)
       {
