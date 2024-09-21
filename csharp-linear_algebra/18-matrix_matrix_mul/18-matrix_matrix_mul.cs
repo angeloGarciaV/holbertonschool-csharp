@@ -16,7 +16,7 @@ class MatrixMath
     int cols1 = matrix1.GetLength(1);
     int rows2 = matrix2.GetLength(0);
     int cols2 = matrix2.GetLength(1);
-    double[,] result = new double[rows1, cols1]; 
+    double[,] result = new double[rows1, cols2]; 
     double sum = 0;
 
     if (((rows1 == 2 && cols1 == 2) || (rows1 == 3 && cols1 == 3)) && (cols1 == rows2))
