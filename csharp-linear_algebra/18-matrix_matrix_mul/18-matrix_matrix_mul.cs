@@ -25,7 +25,7 @@ class MatrixMath
       {
         for(int j = 0; j < cols2; j++)
         {
-          for(int k = 0; k < rows2; k++)
+          for(int k = 0; k < cols1; k++)
           {
             sum += matrix1[i,k] * matrix2[k,j];
             
