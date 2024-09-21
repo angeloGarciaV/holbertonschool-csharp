@@ -1,7 +1,16 @@
 ﻿using System;
 
+/// <summary>
+/// Represents a class to perform matrix operations.
+/// </summary>
 class MatrixMath
 {
+  /// <summary>
+  /// Represents a method to add two matrices.
+  /// </summary>
+  /// <param name="matrix1">The first matrix.</param>
+  /// <param name="matrix2">The second matrix.</param>
+  /// <returns>The sum of the two matrices.</returns>
   public static double[,] Add(double[,] matrix1, double[,] matrix2)
   {
     int rows1 = matrix1.GetLength(0);
@@ -9,33 +18,18 @@ class MatrixMath
     int rows2 = matrix2.GetLength(0);
     int cols2 = matrix2.GetLength(1);
     double[,] result = new double[rows1, cols1];
-    double[,] rtrn = { { -1 } };
 
-    if (rows1 != rows2 || cols1 != cols2)
-      return rtrn;
-
-    for(int k = 0; k < rows1; k++ )
+    if (((rows1 == 2 && cols1 == 2) || (rows1 == 3 && cols1 == 3)) && rows1 == rows2)
     {
-      if(matrix1.GetLength(1) != cols1 || matrix2.GetLength(1) != cols2)
-        return rtrn;
-    }
-
-  for(int i =0; i< rows1; i++)
-    {
-      for(int j = 0; j < cols1; j++)
+        for(int i =0; i< rows1; i++)
       {
-        result[i,j] = matrix1[i,j] + matrix2[i,j];
+        for(int j = 0; j < cols1; j++)
+        {
+          result[i,j] = matrix1[i,j] + matrix2[i,j];
+        }
       }
+      return result;
     }
-    return result;
+    return new double[,] {{-1}};
   }
 }
-
-// Create a method that adds two matrices and returns the resulting matrix.
-
-// Class: MatrixMath
-// Prototype: public static double[,] Add(double[,] matrix1, double[,] matrix2)
-// The matrices can be either both 2D or both 3D
-// 2D ex.: double[,] matrix = { { 1, 2 }, { 3, 4 } };
-// 3D ex.: double[,] matrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-// If acols2 matrix is not a 2D or 3D matrix, or both matrices are not the same size, return a matrix containing -1
