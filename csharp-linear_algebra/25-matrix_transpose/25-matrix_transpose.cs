@@ -12,20 +12,15 @@ class MatrixMath
   /// <returns>The transposed matrix.</returns>
   public static double[,] Transpose(double[,] matrix)
   {
-    if (matrix.Length == 0)
-    {
-      return new double[,] {{}};
+        if (matrix.Length == 0){
+            return (new double[,]{});
+        }
+        var newMatrix = new double[matrix.GetLength(1),matrix.GetLength(0)];
+        for (int y = 0; y < matrix.GetLength(0); y++){
+            for (int x = 0; x < matrix.GetLength(1); x++){
+                newMatrix[x,y] = matrix[y,x];
+            }
+        }
+        return newMatrix;
     }
-    int rows = matrix.GetLength(0);
-    int cols = matrix.GetLength(1);
-    double[,] result = new double[cols, rows];
-    for (int i = 0; i < rows; i++)
-    {
-      for (int j = 0; j < cols; j++)
-      {
-        result[j, i] = matrix[i, j];
-      }
-    }
-    return result;
-  }
 }
