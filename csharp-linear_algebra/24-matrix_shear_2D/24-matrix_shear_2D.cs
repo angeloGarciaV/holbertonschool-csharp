@@ -40,6 +40,10 @@ class MatrixMath
 
   public static double[,] Shear2D(double[,] matrix, char direction, double factor)
   {
+    if (matrix.Length == 0 || matrix.GetLength(1) != 2 || matrix.GetLength(1) != matrix.GetLength(0))
+    {
+      return (new double[,]{{-1}});
+    }
     double[,] shear = new double[2,2];
 
     if(direction == 'X' || direction == 'x')
