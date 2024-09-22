@@ -7,7 +7,7 @@ class MatrixMath
 {
   public static double Determinant2D(double[,] matrix)
   {
-    return (matrix[0,0] * matrix[1,1] - matrix[0,1] * matrix[1,0]);
+        return (Math.Round((matrix[0,0] * matrix[1,1]) - (matrix[0,1] * matrix[1, 0]), 2));
   }
   /// <summary>
   /// Represents a method to calculate the determinant of a matrix.
