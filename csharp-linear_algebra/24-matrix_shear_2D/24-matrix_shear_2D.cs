@@ -53,6 +53,9 @@ class MatrixMath
     } else if(direction == 'Y' || direction == 'y')
     {
       shear  = new double[2,2] {{1, 0}, {factor, 1}};
+    }else
+    {
+      return (new double[,]{{-1}});
     }
     
     matrix = new Double[2,2]{{matrix[0,0], matrix[1,0]},{matrix[0,1], matrix[1,1]}};
