@@ -1,5 +1,8 @@
 ﻿using System;
 
+/// <summary>
+/// Represents a class of matrix operations.
+/// </summary>
 class MatrixMath
 {
     /// <summary>
