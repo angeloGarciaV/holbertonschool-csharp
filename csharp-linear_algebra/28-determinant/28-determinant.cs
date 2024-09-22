@@ -23,10 +23,10 @@ class MatrixMath
     {
       return (Determinant2D(matrix));
     }
-    double[,] detA = new Double[,]{{matrix[1,1], matrix[1,2]},{matrix[2,1], matrix[2,2]}};
-    double[,] detB = new Double[,]{{matrix[1,0], matrix[1,2]},{matrix[2,0], matrix[2,2]}};
-    double[,] detC = new Double[,]{{matrix[1,0], matrix[1,1]},{matrix[2,0], matrix[2,1]}};
-    double[,] res = ((matrix[0,0] * Determinant2D(detA)) - (matrix[0,1] * Determinant2D(detB))) + matrix[0,2] * Determinant2D(detC);
+    double[,] detA = new double[,]{{matrix[1,1], matrix[1,2]},{matrix[2,1], matrix[2,2]}};
+    double[,] detB = new double[,]{{matrix[1,0], matrix[1,2]},{matrix[2,0], matrix[2,2]}};
+    double[,] detC = new double[,]{{matrix[1,0], matrix[1,1]},{matrix[2,0], matrix[2,1]}};
+    double res = ((matrix[0,0] * Determinant2D(detA)) - (matrix[0,1] * Determinant2D(detB))) + matrix[0,2] * Determinant2D(detC);
     return Math.Round(res, 2);
   }
 }
