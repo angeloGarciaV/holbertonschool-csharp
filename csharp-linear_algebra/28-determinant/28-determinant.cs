@@ -5,6 +5,10 @@
 /// </summary>
 class MatrixMath
 {
+  public static double Determinant2D(double[,] matrix)
+  {
+    return (matrix[0,0] * matrix[1,1] - matrix[0,1] * matrix[1,0]);
+  }
   /// <summary>
   /// Represents a method to calculate the determinant of a matrix.
   /// </summary>
@@ -12,42 +16,17 @@ class MatrixMath
   /// <returns>The determinant of the matrix.</returns>
   public static double Determinant(double[,] matrix)
   {
-    if (matrix.Length == 0)
-    {
-      return 1;
+    if (matrix.GetLength(1) > 3 ||matrix.GetLength(1) != matrix.GetLength(0)){
+        return (-1);
     }
-    if (matrix.GetLength(0) != matrix.GetLength(1))
+    if (matrix.GetLength(1) == 2)
     {
-      throw new ArgumentException("Matrix must be square.");
+      return (Determinant2D(matrix));
     }
-    if (matrix.GetLength(0) == 1)
-    {
-      return matrix[0, 0];
-    }
-    if (matrix.GetLength(0) == 2)
-    {
-      return matrix[0, 0] * matrix[1, 1] - matrix[0, 1] * matrix[1, 0];
-    }
-    double det = 0;
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-      double[,] subMatrix = new double[matrix.GetLength(0) - 1, matrix.GetLength(0) - 1];
-      for (int y = 1; y < matrix.GetLength(0); y++)
-      {
-        for (int x = 0; x < matrix.GetLength(0); x++)
-        {
-          if (x < i)
-          {
-            subMatrix[y - 1, x] = matrix[y, x];
-          }
-          else if (x > i)
-          {
-            subMatrix[y - 1, x - 1] = matrix[y, x];
-          }
-        }
-      }
-      det += (i % 2 == 0 ? 1 : -1) * matrix[0, i] * Determinant(subMatrix);
-    }
-    return det;
+    double[,] detA = new Double[,]{{matrix[1,1], matrix[1,2]},{matrix[2,1], matrix[2,2]}};
+    double[,] detB = new Double[,]{{matrix[1,0], matrix[1,2]},{matrix[2,0], matrix[2,2]}};
+    double[,] detC = new Double[,]{{matrix[1,0], matrix[1,1]},{matrix[2,0], matrix[2,1]}};
+    double[,] res = ((matrix[0,0] * Determinant2D(detA)) - (matrix[0,1] * Determinant2D(detB))) + matrix[0,2] * Determinant2D(detC);
+    return Math.Round(res, 2);
   }
 }
