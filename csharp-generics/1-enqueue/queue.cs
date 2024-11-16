@@ -1,52 +1,64 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 
 /// <summary>
-/// Queue class
+/// A generic queue class.
 /// </summary>
-/// <typeparam name="T"></typeparam>
-class Queue<T>{
+/// <typeparam name="T">Type is user-defined at instantiation.</typeparam>
+class Queue<T> {
+    
+    public Node head { get; set; } = null;
+    public Node tail { get; set; } = null;
+    int count { get; set; } = 0;
 
-  public Node head { get; set; } = null;
-  public Node tail { get; set; } = null;
-  int count { get; set; } = 0;
-
-  /// <summary>
-  /// CheckType method
-  /// </summary>
-  /// <returns>Type</returns>
-  public Type CheckType(){
-    return typeof(T);
-  }
-
-  /// <summary>
-  /// Node class
-  /// </summary>
-  public class Node{
-    T value;
-    public Node next { get; set;} = null;
-
-    public Node(T _value){
-      this.value = _value;
+    /// <summary>
+    /// Gets the type of the instance.
+    /// </summary>
+    /// <returns>Returns the instance type.</returns>
+    public Type CheckType() {
+        return typeof(T);
     }
-  }
-  /// <summary>
-  ///  Enqueue method
-  /// </summary>
-  public void Enqueue(T _value){
-    Node newNode = new Node(_value);
-    if(head == null){
-      head = newNode;
-      tail = newNode;
-    }else{
-      tail.next = newNode;
-      tail = newNode;
-    }
-    count++;
-  }
 
-  public int Count(){
-    return count;
-  }
-  
+    /// <summary>
+    /// Defines a node of a queue.
+    /// </summary>
+    public class Node {
+
+        T value;
+        public Node next { get; set; } = null;
+
+        /// <summary>
+        /// Class contructor.
+        /// </summary>
+        /// <param name="_value">Value initialize node with.</param>
+        public Node(T _value) {
+            value = _value;
+        }
+
+    }
+
+    /// <summary>
+    /// Add a node to the queue.
+    /// </summary>
+    public void Enqueue(T _value) {
+        
+         Node newNode = new Node(_value);
+
+        // If head does not exist, set new node as head and tail.
+        if (head == null) {
+            tail = head = newNode;
+        } else {
+            // Add new node.
+            tail.next = newNode;
+            tail = newNode;
+        }
+        // Increment count of nodes in queue.
+        count++;
+    }
+
+    /// <summary>
+    /// Get the number of nodes in queue.
+    /// </summary>
+    public int Count() {
+        return count;
+    }
 }
