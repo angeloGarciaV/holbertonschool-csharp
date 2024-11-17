@@ -45,30 +45,30 @@ interface ICollectable
 /// </summary>
 class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
-	public int durability { get; set; }
-	public bool isCollected { get; set; }
+    public int durability { get; set; }
+    public bool isCollected { get; set; }
 
     /// <summary>
     /// Takes place when the object interacts.
     /// </summary>
-	public void Interact()
-	{
-
-	}
+    public void Interact()
+    {
+        // Method implementation
+    }
 
     /// <summary>
-    /// Takes place when the object brakes.
+    /// Takes place when the object breaks.
     /// </summary>
-	public void Break()
-	{
-
-	}
+    public void Break()
+    {
+        // Method implementation
+    }
 
     /// <summary>
     /// Takes place when the object collects something.
     /// </summary>
-	public void Collect()
-	{
-
-	}
+    public void Collect()
+    {
+        // Method implementation
+    }
 }
