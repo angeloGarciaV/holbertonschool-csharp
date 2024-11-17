@@ -1,82 +1,74 @@
 ﻿using System;
 
-/// <summary>
-/// A base class.
+///<summary>
+/// Base class
 /// </summary>
-abstract class Base {
+abstract class Base
+{
+  public string name = "";
 
-    public string name { get; set; }
-
-    /// <summary>
-    /// Convert the object to a string.
-    /// </summary>
-    public override string ToString() {
-        return $"{name} is a {this.GetType()}";
-    }
-
-}
-
-class TestObject : IInteractive, IBreakable, ICollectable {
-
-    public int durability { get; set; }
-    public bool isCollected { get; set; }
-
-    public void Interact() {
-        throw new NotImplementedException();
-    }
-
-    public void Break() {
-        throw new NotImplementedException();
-    }
-
-    public void Collect() {
-        throw new NotImplementedException();
-    }
-
+	public override string ToString()
+	{
+		return (this.name + " is a " + this.GetType().ToString());
+	}
 }
 
 /// <summary>
-/// Interface defining an interactable object.
+/// Interactive interface
 /// </summary>
-public interface IInteractive {
-
-    /// <summary>
-    /// Interact with this object.
-    /// </summary>
+interface IInteractive
+{
     void Interact();
-
 }
 
 /// <summary>
-/// Interface defining a breakable object.
+/// Breakable Interface
 /// </summary>
-public interface IBreakable {
-
-    /// <summary>
-    /// The durability of the breakable object.
-    /// </summary>
+interface IBreakable
+{
     int durability { get; set; }
-
-    /// <summary>
-    /// Break this object.
-    /// </summary>
     void Break();
-
 }
 
 /// <summary>
-/// Interface defining a collectable object.
+/// Collectable Interface
 /// </summary>
-public interface ICollectable {
-
-    /// <summary>
-    /// Denotes whether the object has been collected.
-    /// </summary>
+interface ICollectable
+{
     bool isCollected { get; set; }
-
-    /// <summary>
-    /// Collect this object.
-    /// </summary>
     void Collect();
 
+}
+
+/// <summary>
+/// TestObject class
+/// </summary>
+class TestObject : Base, IInteractive, IBreakable, ICollectable
+{
+	public int durability { get; set; }
+	public bool isCollected { get; set; }
+
+    /// <summary>
+    /// Takes place when the object interacts.
+    /// </summary>
+	public void Interact()
+	{
+
+	}
+
+    /// <summary>
+    /// Takes place when the object brakes.
+    /// </summary>
+	public void Break()
+	{
+
+	}
+
+    /// <summary>
+    /// Takes place when the object collects something.
+    /// </summary>
+	public void Collect()
+	{
+
+	}
 }
