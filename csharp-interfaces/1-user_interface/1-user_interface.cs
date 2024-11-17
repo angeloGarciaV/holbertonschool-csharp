@@ -48,16 +48,17 @@ class TestObject : Base, IInteractive, IBreakable, ICollectable
 
   public void Interact()
   {
-    // Do something
+    throw new NotImplementedException();
   }
 
   public void Break()
   {
-    // Do something
+    throw new NotImplementedException();
+
   }
 
   public void Collect()
   {
-    // Do something
+    throw new NotImplementedException();
   }
 }
